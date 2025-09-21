@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.993 s - in TestSuite
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.028 s <<< FAILURE! - in TestSuite
+stubGetEndpoint(com.example.tests.ApiTest)  Time elapsed: 0.619 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at com.example.tests.ApiTest.stubGetEndpoint(ApiTest.java:50)
+

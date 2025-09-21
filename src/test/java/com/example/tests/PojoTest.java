@@ -45,4 +45,21 @@ public class PojoTest extends ApiStubTest {
         org.testng.Assert.assertEquals(response.jsonPath().getInt("userId"), 214912);
         org.testng.Assert.assertEquals(response.jsonPath().getInt("id"), 214912); // Should match stubbed value
     }
+
+    @Test(enabled = true)
+public void callJsonPlaceholderGet() {
+    RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
+    Response response = given()
+        .when()
+        .get("/posts/1")
+        .then()
+        .statusCode(200)
+        .extract()
+        .response();
+
+    String responseBody = response.getBody().asString();
+    System.out.println("jsonplaceholder get: " + responseBody);
+
+    org.testng.Assert.assertEquals(response.jsonPath().getInt("id"), 1);
+}
 }
