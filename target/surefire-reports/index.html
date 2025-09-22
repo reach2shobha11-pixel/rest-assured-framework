@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,27 +103,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.tests.PojoTest" class="method navigator-link" hash-for-method="callJsonPlaceholderGet">callJsonPlaceholderGet</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.tests.ApiTest" class="method navigator-link" hash-for-method="stubGetEndpoint">stubGetEndpoint</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.tests.ApiTest" class="method navigator-link" hash-for-method="stubPutEndpoint">stubPutEndpoint</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.tests.PojoTest" class="method navigator-link" hash-for-method="testPojoPostEndpoint">testPojoPostEndpoint</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.tests.ApiTest" class="method navigator-link" hash-for-method="testStubbedPostEndpoint">testStubbedPostEndpoint</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.tests.tokenGentest" class="method navigator-link" hash-for-method="callTokenGenerator">callTokenGenerator</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -141,50 +121,14 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.example.tests.ApiTest</span>
+              <span class="class-name">com.example.tests.tokenGentest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="stubGetEndpoint">
-                  </a> <!-- stubGetEndpoint -->
-                  <span class="method-name">stubGetEndpoint</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="stubPutEndpoint">
-                  </a> <!-- stubPutEndpoint -->
-                  <span class="method-name">stubPutEndpoint</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testStubbedPostEndpoint">
-                  </a> <!-- testStubbedPostEndpoint -->
-                  <span class="method-name">testStubbedPostEndpoint</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.example.tests.PojoTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="callJsonPlaceholderGet">
-                  </a> <!-- callJsonPlaceholderGet -->
-                  <span class="method-name">callJsonPlaceholderGet</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPojoPostEndpoint">
-                  </a> <!-- testPojoPostEndpoint -->
-                  <span class="method-name">testPojoPostEndpoint</span>
+                  <a name="callTokenGenerator">
+                  </a> <!-- callTokenGenerator -->
+                  <span class="method-name">callTokenGenerator</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,8 +144,7 @@
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.example.tests.ApiTest&quot;/&gt;
-      &lt;class name=&quot;com.example.tests.PojoTest&quot;/&gt;
+      &lt;class name=&quot;com.example.tests.tokenGentest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -215,7 +158,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (2 classes)</span>
+                <span class="test-name">Surefire test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -241,32 +184,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'stubGetEndpoint')
-data.setCell(0, 2, 'com.example.tests.ApiTest')
-data.setCell(0, 3, 1019);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'callJsonPlaceholderGet')
-data.setCell(1, 2, 'com.example.tests.PojoTest')
-data.setCell(1, 3, 338);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testPojoPostEndpoint')
-data.setCell(2, 2, 'com.example.tests.PojoTest')
-data.setCell(2, 3, 91);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'stubPutEndpoint')
-data.setCell(3, 2, 'com.example.tests.ApiTest')
-data.setCell(3, 3, 75);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testStubbedPostEndpoint')
-data.setCell(4, 2, 'com.example.tests.ApiTest')
-data.setCell(4, 3, 64);
+data.setCell(0, 1, 'callTokenGenerator')
+data.setCell(0, 2, 'com.example.tests.tokenGentest')
+data.setCell(0, 3, 233);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 233 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -292,46 +219,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.example.tests.ApiTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
+              <div class="chronological-class-name">com.example.tests.tokenGentest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">callTokenGenerator</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">stubGetEndpoint</span>
-                <span class="method-start">1176 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">stubPutEndpoint</span>
-                <span class="method-start">2196 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testStubbedPostEndpoint</span>
-                <span class="method-start">2272 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">2336 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.tests.PojoTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">2345 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">callJsonPlaceholderGet</span>
-                <span class="method-start">2376 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testPojoPostEndpoint</span>
-                <span class="method-start">2715 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">2807 ms</span>
-              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

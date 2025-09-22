@@ -1,0 +1,6 @@
+#surefire_0
+#Mon Sep 22 15:21:55 PDT 2025
+basedir=/Users/chinnu/Documents/JaveRestAPI/rest-assured-framework
+test=tokenGentest
+user.dir=/Users/chinnu/Documents/JaveRestAPI/rest-assured-framework
+localRepository=/Users/chinnu/.m2/repository
