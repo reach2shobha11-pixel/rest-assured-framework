@@ -32,7 +32,7 @@ public class tokenGentest {
 
     @Test
     public void callOpenWeatherMap() {
-        String apiKey = "f6169e137a1c1cb7cf5a427b9ef40262"; // Replace with your key
+        String apiKey = ""; // Replace with your key
        io.restassured.RestAssured.baseURI = "https://api.openweathermap.org";
         Response response = given()
             .queryParam("q", "London")
