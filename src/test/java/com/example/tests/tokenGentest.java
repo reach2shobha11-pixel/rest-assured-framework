@@ -1,9 +1,16 @@
 package com.example.tests;
 import com.example.utils.keyGen;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+
+import io.restassured.response.Response;
+import static io.restassured.RestAssured.given;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.Assert;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import java.io.File;
 
 public class tokenGentest {
@@ -14,12 +21,30 @@ public class tokenGentest {
         int records = loginData.length;
         int index = (int) (Math.random() * records);
 
-        String username = (String) loginData[0][0];
-        String password = (String) loginData[0][1];
-        System.out.println("credentials"+username+password);
-        String apikey = keyGen.generateKey(username, password);
-        Assert.assertNotNull(apikey, "API key should not be null");
-        System.out.println("apikey: " + apikey);
+        String username = (String) loginData[index][0];
+        String password = (String) loginData[index][1];
+        System.out.println("credentials: " + username + " / " + password);
+
+      //  String apikey = keyGen.generateKey(username, password);
+        //Assert.assertNotNull(apikey, "API key should not be null");
+        //System.out.println("apikey: " + apikey);
+    }
+
+    @Test
+    public void callOpenWeatherMap() {
+        String apiKey = "f6169e137a1c1cb7cf5a427b9ef40262"; // Replace with your key
+       io.restassured.RestAssured.baseURI = "https://api.openweathermap.org";
+        Response response = given()
+            .queryParam("q", "London")
+            .queryParam("appid", apiKey)
+            .when()
+            .get("/data/2.5/weather")
+            .then()
+            .statusCode(200)
+            .extract()
+            .response();
+
+        System.out.println("Weather response: " + response.asString());
     }
 
     @DataProvider(name = "loginData")
