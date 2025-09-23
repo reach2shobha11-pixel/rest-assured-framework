@@ -1,0 +1,17 @@
+name: Docker Maven Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-in-docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Docker image
+        run: docker build -t rest-assured-framework .
+      - name: Run tests in Docker container
+        run: docker run rest-assured-framework
