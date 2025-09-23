@@ -1,17 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-22T15:21:55 PDT" name="Surefire suite" finished-at="2025-09-22T15:21:56 PDT" duration-ms="263">
+  <suite started-at="2025-09-23T08:14:18 PDT" name="Surefire suite" finished-at="2025-09-23T08:14:21 PDT" duration-ms="3236">
     <groups>
     </groups>
-    <test started-at="2025-09-22T15:21:55 PDT" name="Surefire test" finished-at="2025-09-22T15:21:56 PDT" duration-ms="263">
-      <class name="com.example.tests.tokenGentest">
-        <test-method signature="callTokenGenerator()[pri:0, instance:com.example.tests.tokenGentest@2d127a61]" started-at="2025-09-22T15:21:55 PDT" name="callTokenGenerator" finished-at="2025-09-22T15:21:56 PDT" duration-ms="233" status="PASS">
+    <test started-at="2025-09-23T08:14:18 PDT" name="Surefire test" finished-at="2025-09-23T08:14:21 PDT" duration-ms="3236">
+      <class name="com.example.tests.ApiTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.tests.ApiTest@4e31276e]" started-at="2025-09-23T08:14:18 PDT" name="setup" finished-at="2025-09-23T08:14:19 PDT" duration-ms="1355" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- callTokenGenerator -->
-      </class> <!-- com.example.tests.tokenGentest -->
+        </test-method> <!-- setup -->
+        <test-method signature="stubGetEndpoint()[pri:0, instance:com.example.tests.ApiTest@4e31276e]" started-at="2025-09-23T08:14:19 PDT" name="stubGetEndpoint" finished-at="2025-09-23T08:14:20 PDT" duration-ms="1253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stubGetEndpoint -->
+        <test-method signature="stubPutEndpoint()[pri:0, instance:com.example.tests.ApiTest@4e31276e]" started-at="2025-09-23T08:14:20 PDT" name="stubPutEndpoint" finished-at="2025-09-23T08:14:21 PDT" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stubPutEndpoint -->
+        <test-method signature="testStubbedPostEndpoint()[pri:0, instance:com.example.tests.ApiTest@4e31276e]" started-at="2025-09-23T08:14:21 PDT" name="testStubbedPostEndpoint" finished-at="2025-09-23T08:14:21 PDT" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStubbedPostEndpoint -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.tests.ApiTest@4e31276e]" started-at="2025-09-23T08:14:21 PDT" name="teardown" finished-at="2025-09-23T08:14:21 PDT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.example.tests.ApiTest -->
+      <class name="com.example.tests.PojoTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.tests.PojoTest@19e7a160]" started-at="2025-09-23T08:14:21 PDT" name="setup" finished-at="2025-09-23T08:14:21 PDT" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="callJsonPlaceholderGet()[pri:0, instance:com.example.tests.PojoTest@19e7a160]" started-at="2025-09-23T08:14:21 PDT" name="callJsonPlaceholderGet" finished-at="2025-09-23T08:14:21 PDT" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- callJsonPlaceholderGet -->
+        <test-method signature="testPojoPostEndpoint()[pri:0, instance:com.example.tests.PojoTest@19e7a160]" started-at="2025-09-23T08:14:21 PDT" name="testPojoPostEndpoint" finished-at="2025-09-23T08:14:21 PDT" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPojoPostEndpoint -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.tests.PojoTest@19e7a160]" started-at="2025-09-23T08:14:21 PDT" name="teardown" finished-at="2025-09-23T08:14:21 PDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.example.tests.PojoTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>
